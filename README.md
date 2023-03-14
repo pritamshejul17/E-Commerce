@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+### Status : Added Navbar to the app, working on other features of the application
+
+# E-Commerce Application with React JS
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
