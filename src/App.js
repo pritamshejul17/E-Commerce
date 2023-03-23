@@ -3,6 +3,8 @@ import Navbar from './Components/Navbar'
 import Profile from  './Components/Profile'
 import { useState } from 'react';
 import LandingPage from  './Pages/LandingPage'
+import Shirts from './Components/Shirts'
+import Product from  './Pages/Product'
 
 
 function App() {
@@ -46,7 +48,9 @@ function App() {
       <Navbar onHover = {handleMouseEnter} offHover = {handleMouseLeave} isOn = {handleOnProfile} isOff = {handleOffProfile}/>
       { (showComponent || isPoninted) && <Section isTrue = {handleOnHover} isFalse = {handleOffHover}/>}
       { (isProfile || isHovered) && <Profile isSet = {handleHoveredOn} isUnset = {handleHoveredOff}/>}
-      < LandingPage />
+      {/* < LandingPage /> */}
+      {/* < Shirts /> */}
+      <Product />
     </>
   );
 }
