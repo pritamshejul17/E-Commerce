@@ -5,7 +5,7 @@ function Profile (props) {
                 <div className = 'p-2 border-b-2 border-blacks'>
                     <h1 className = 'font-bold mt-2'>Welcome</h1>
                     <h2>To access acounts and manage orders</h2>
-                    <button className = 'text-red-400 text-xs border-2 border-blacks font-bold p-2 mt-2 px-6'>LOGIN / SIGNUP</button>
+                    <button className = 'text-slate-600 text-xs border-2 border-blacks font-bold p-2 mt-2 px-6'>LOGIN / SIGNUP</button>
                 </div>
                 <div className = 'flex flex-col p-2 border-b-2 borde-blacks text-xs'>
                     <a href = '#' className = 'p-0.5 mt-0.5'>Orders</a>
