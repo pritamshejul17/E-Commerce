@@ -22,8 +22,8 @@ const Product = (props) => {
                     <button type='button' className = 'border-2 w-12 h-12 ml-8 border-stone-600 p-3 rounded-md'>L</button>
                 </div>
                 <div className = 'flex justify-center p-4 mt-4'>
-                    <button className = 'text-white bg-slate-800 p-3 px-5 font-normal rounded-md mr-4'>ADD TO CART</button>
-                    <button className = 'text-white bg-slate-800 p-3 px-5 font-normal rounded-md ml-4'>BUY NOW</button>
+                    <button  className = 'text-white hover:bg-stone-700 bg-slate-800 p-3 px-5 font-normal rounded-md mr-4'>ADD TO CART</button>
+                    <button className = 'text-white hover:bg-stone-700 bg-slate-800 p-3 px-5 font-normal rounded-md ml-4'>BUY NOW</button>
                 </div>
                 <h1 className = 'text-slate-600 text-lg font-medium p-6'>Thank you for shopping from our store!</h1>
             </div>

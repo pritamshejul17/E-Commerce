@@ -6,6 +6,7 @@ import LandingPage from  './Pages/LandingPage'
 import Shirts from './Components/Shirts'
 import Product from  './Pages/Product'
 import { Route, Routes } from 'react-router-dom'
+import Cart from './Components/Cart'
 
 
 function App() {
@@ -23,6 +24,12 @@ function App() {
   const [isPoninted, setIsPointed] = useState(false);
   const [isProfile, setIsProfile] = useState(false);
   const [isHovered, setIsHovered] =  useState(false);
+  const [cart, setCart] = useState([]);
+
+  const handleCart = (obj) => {
+    const newCart = [...cart, obj];
+    setCart(newCart);
+  }
 
   const handleHoveredOn = ()  => {
     setIsHovered(true);
@@ -64,7 +71,8 @@ function App() {
       <Routes>
         <Route path= "/" element = {< LandingPage />}/>
         <Route path = "/men/shirts" element = { <Shirts myArray = {myArray}/>}/>
-        <Route path = "men/shirts/:id" element = { <Product myArray = {myArray}/> }/>
+        <Route path = "/men/shirts/:id" element = { <Product myArray = {myArray}/> }/>
+        <Route path = "/bag" element = { <Cart bag = {cart} /> }/>
       </Routes>
       
       {/* < LandingPage /> */}
