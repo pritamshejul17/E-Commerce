@@ -71,9 +71,11 @@ function App() {
       <Routes>
         <Route path= "/" element = {< LandingPage />}/>
         <Route path = "/men/shirts" element = { <Shirts myArray = {myArray}/>}/>
-        <Route path = "/men/shirts/:id" element = { <Product myArray = {myArray}/> }/>
-        <Route path = "/bag" element = { <Cart bag = {cart} /> }/>
+        <Route path = "/men/shirts/:id" element = { <Product myArray = {myArray} addToCart = {(arg) => handleCart(arg)} /> }/>
+        <Route path = "/bag" element = { <Cart cart = {cart}/> }/>
       </Routes>
+
+      {/* <Cart cart = {cart} /> */}
       
       {/* < LandingPage /> */}
       {/* < Shirts /> */}
