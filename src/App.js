@@ -88,6 +88,7 @@ function App() {
         <Route path = "/bag" element = { <Cart cart = {cart}  removeFromCart = {(id) => deleteItem(id)}/> }/>
       </Routes>
 
+      <h1 className = 'text-stone-600 font-medium text-lg text-center pt-5 pb-2'>Made with love by <a  target='_blank' className = 'text-red-600 text-xl' href='https://pritamshejul17.github.io/'>Pritam</a></h1>
       {/* <Cart cart = {cart} /> */}
       {/* < LandingPage /> */}
       {/* < Shirts /> */}
