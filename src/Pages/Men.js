@@ -17,15 +17,15 @@ const Men = () => {
                     <h1 className = 'text-lg p-3 text-center'>TOPWEAR</h1>
                 </div>
                 <div className = 'ml-8'>
-                    <a href='#'><img loading = 'lazy' className = ' h-80 w-60 rounded-lg' src={B3}/></a>
+                    <Link  to = "/Men/Shirts"><img loading = 'lazy' className = ' h-80 w-60 rounded-lg' src={B3}/></Link>
                     <h1 className = 'text-lg p-3 text-center'>BOTTOMWEAR</h1>
                 </div>
                 <div className ='ml-8'>
-                    <a href='#'  className = ''><img loading = 'lazy' className = ' h-80 w-60 rounded-lg' src={T3}/></a>
+                    <Link to ="/Men/Shirts"  className = ''><img loading = 'lazy' className = ' h-80 w-60 rounded-lg' src={T3}/></Link>
                     <h1 className = 'text-lg p-3 text-center'>STYLE</h1>
                 </div>
                 <div className = 'ml-8'>
-                    <a href='#'  className = ''><img loading = 'lazy' className = ' h-80 w-60 rounded-lg ' src={S3}/></a>
+                    <Link to ="/Men/Shirts"  className = ''><img loading = 'lazy' className = ' h-80 w-60 rounded-lg ' src={S3}/></Link>
                     <h1 className = 'text-lg p-3 text-center'>FOOT WEAR</h1>
                 </div>
             </div>

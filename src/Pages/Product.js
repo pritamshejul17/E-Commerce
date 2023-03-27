@@ -1,9 +1,20 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import { useState } from 'react';
 const Product = (props) => {
     const { myArray, addToCart } = props;
     const { id } = useParams();
     const index = parseInt(id);
+    const [component, setComponent] = useState(false);
+
+    const handleClick = () => {
+        addToCart(myArray[index - 1]);
+        setComponent(true);
+        setTimeout(() => {
+            setComponent(false);
+        },2000)
+
+    }
   return (
     <>
         <div className = 'flex justify-center h-screen '>
@@ -22,12 +33,10 @@ const Product = (props) => {
                     <button type='button' className = 'border-2 w-12 h-12 ml-8 border-stone-600 p-3 rounded-md'>L</button>
                 </div>
                 <div className = 'flex justify-center p-4 mt-4'>
-                    <button onClick={() => {
-                        console.log("Clicked from Button")
-                        addToCart(myArray[index - 1])
-                    }}  className = 'text-white hover:bg-stone-700 bg-slate-800 p-3 px-5 font-normal rounded-md mr-4'>ADD TO CART</button>
-                    <button className = 'text-white hover:bg-stone-700 bg-slate-800 p-3 px-5 font-normal rounded-md ml-4'>BUY NOW</button>
+                    <button onClick={handleClick}  className = 'text-white  hover:font-medium bg-slate-800 p-3 px-5 font-normal rounded-md mr-4'>ADD TO CART</button>
+                    <button className = 'text-white hover:font-medium bg-slate-800 p-3 px-5 font-normal rounded-md ml-4'>BUY NOW</button>
                 </div>
+                {component && <h1 className = 'inline-block w-60 text-xl p-2 text-xs font-normal bg-slate-800 text-white rounded-md'>Added To Your Bag!</h1>}
                 <h1 className = 'text-slate-600 text-lg font-medium p-6'>Thank you for shopping from our store!</h1>
             </div>
         </div>

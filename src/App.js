@@ -31,6 +31,11 @@ function App() {
     setCart(newCart);
   }
 
+  const deleteItem = (id) => {
+    const array = cart.filter((c) => (c.id !== id));
+    setCart(array);
+  }
+
   const handleHoveredOn = ()  => {
     setIsHovered(true);
   }
@@ -72,11 +77,10 @@ function App() {
         <Route path= "/" element = {< LandingPage />}/>
         <Route path = "/men/shirts" element = { <Shirts myArray = {myArray}/>}/>
         <Route path = "/men/shirts/:id" element = { <Product myArray = {myArray} addToCart = {(arg) => handleCart(arg)} /> }/>
-        <Route path = "/bag" element = { <Cart cart = {cart}/> }/>
+        <Route path = "/bag" element = { <Cart cart = {cart}  removeFromCart = {(id) => deleteItem(id)}/> }/>
       </Routes>
 
       {/* <Cart cart = {cart} /> */}
-      
       {/* < LandingPage /> */}
       {/* < Shirts /> */}
       {/* <Product /> */}
