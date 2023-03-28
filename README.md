@@ -1,6 +1,17 @@
-### Status : Added Navbar to the app, working on other features of the application
-
 # E-Commerce Application with React JS
+
+1) This project is an E-commerce application.
+
+2) Where you can see different types of products available on home page
+
+3) Based on your chioce you can select category and see particular
+product details and have an option to add the proudct in your bag/cart.
+
+4) You can add product in your cart/bag
+
+## You can check live version of the app on below link
+
+### https://e-commerce-pritam.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
